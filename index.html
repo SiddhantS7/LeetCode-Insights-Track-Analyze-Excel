@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Metrics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LeetCode Metrics</h1>
+            <p>Track your LeetCode progress with real-time updates and metrics.</p>
+        </header>
+        <main>
+            <section class="stats">
+                <div class="stat-card">
+                    <h2>Solved Problems</h2>
+                    <p id="solved">0</p>
+                </div>
+                <div class="stat-card">
+                    <h2>Easy</h2>
+                    <p id="easy">0</p>
+                </div>
+                <div class="stat-card">
+                    <h2>Medium</h2>
+                    <p id="medium">0</p>
+                </div>
+                <div class="stat-card">
+                    <h2>Hard</h2>
+                    <p id="hard">0</p>
+                </div>
+            </section>
+            <section class="update">
+                <h2>Update Your Metrics</h2>
+                <div class="input-group">
+                    <label for="solvedInput">Total Solved:</label>
+                    <input type="number" id="solvedInput" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="easyInput">Easy Problems:</label>
+                    <input type="number" id="easyInput" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="mediumInput">Medium Problems:</label>
+                    <input type="number" id="mediumInput" min="0">
+                </div>
+                <div class="input-group">
+                    <label for="hardInput">Hard Problems:</label>
+                    <input type="number" id="hardInput" min="0">
+                </div>
+                <button id="updateButton" onclick="updateMetrics()">Update Metrics</button>
+            </section>
+        </main>
+        <footer>
+            <p>Powered by LeetCode Metrics App</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
